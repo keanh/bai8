@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành sử dụng vòng lặp</title>
+</head>
+<body>
+    <p id="vonglap"></p>
+    <script>
+        /*let text="";
+        for (let i=0;i<5;i++){
+            text +="The number is " +i + "<br>";
+        }
+        document.getElementById("vonglap").innerHTML = text;*/
+
+        let num=prompt("Enter your number:")
+        let tong=0;
+        for(let i=1;i<=num;i++){
+            tong +=i;
+        }
+        document.getElementById("vonglap").innerHTML = tong;
+    </script>
+</body>
+</html>
