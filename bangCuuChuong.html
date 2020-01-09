@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+    <script>
+        let num;
+        num= "<table border='1' width='50%'>"
+        for (i=1;i<=9;i++){
+            num=num+"<tr>";
+                for (j=2;j<=9;j++){
+                    num=num + "<td>" + j +"x" + i + "=" + i*j +"</td>"
+            }
+            num=num+"</tr>";
+        }
+        num=num+"</table>";
+        document.write(num);
+    </script>
+
+        /*let a=prompt("nhập số tuổi:");
+        a=Number.parseFloat(a);
+        if(Number.isInteger(a)) {
+            if(a<0 || a>120 ) {
+                alert("sai");
+            }
+            else {
+                alert("đúng");
+            }
+        }
+        else{
+            alert(" nhập sai");
+        }*/
+
+</body>
+</html>
