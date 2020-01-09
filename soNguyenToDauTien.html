@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên tố đầu tiên</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let a=Number(prompt('Nhập số:'));//5
+        let n=2;
+        let count = 0;
+        while (count<a){
+        //for (count=0;count<a;){
+            if (timSnt(n)){
+                document.write(n + " ");
+                count++;
+            }
+            n++;
+        }
+
+        function timSnt(n) {
+                if (n<2){
+                    return  false;
+                }else {
+                    for (let i = 2; i < n ; i++) {
+                        if (n % i == 0) {
+                            return  false;
+                            }
+                        }
+                    }
+                return  true;
+        }
+    </script>
+
+</body>
+</html>
